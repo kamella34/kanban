@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/stylesheet.css">
+   
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+
+    <title>kanban</title>
+</head>
+
+<body>
+
+    <h1>kanban</h1>
+
+    <header  class="sectionAddNotes">
+
+        <section class="formulaire">
+            <h3>Add notes</h3>
+            <form action="" class="form">
+                <label for="">Title of note</label>
+                <input type="text" placeholder="enter a title" class="input-title-note">
+                <label for="">Content of note</label>
+                <input type="text" placeholder="enter a note description" class="input-content-note">
+            </form>
+            <button class="button-valider mt-3">Validation</button>
+        </section>
+
+        <section class="delete" >
+            <h3 class="statut">Delete notes</h3>
+            <img src="asset/img/294071.svg" alt="aa" class="garbage">
+        </section>
+
+    </header>
+
+    <main>
+        <section class="sectionToDo deplace">
+            <h2 class="title-to-do statut">TO DO</h2>
+            <article class="article-to-do droptarget "></article>
+        </section>
+
+        <section class="sectionDone deplace">
+            <h2 class="statut">DONE</h2>
+            <article class="article-done droptarget"></article>
+        </section>
+
+        <section class="sectionVerified deplace">
+            <h2 class="statut" >VERIFIED</h2>
+            <article class="article-verified droptarget"></article>
+        </section>
+    </main>
+
+
+    <script src="asset/js/tpKanban.js"></script>
+</body>
+
+</html>
